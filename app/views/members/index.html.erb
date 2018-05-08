@@ -1,0 +1,10 @@
+<h1>Members#index</h1>
+
+<%= @members %>
+<h2><% @members.each do |n| %><br></h2>
+  name: <%= n.name %>
+  age: <%= n.age %>
+  
+  <%= link_to "delete", "#{n.id}/delete", method: :delete, data:{confirm:"OK?"} %>
+<% end %>
+  

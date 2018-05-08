@@ -1,0 +1,13 @@
+<h1>Edit Members</h1>
+
+<%= form_for @member, url: 'update' do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  
+  <%= f.label :age %>
+  <%= f.number_field :age %>
+  
+  <%= f.submit "update member", class: "btn btn-primary" %>
+<% end %>
+
+<p>Find me in app/views/members/new.html.erb</p>
